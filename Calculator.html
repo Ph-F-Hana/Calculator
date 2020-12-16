@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<div class="container">
+			
+			Formula: <input id="Formula" type="text"/><br>
+			<table border="7" style="float:left; margin-right:10px">
+					<tr>
+						<td colspan="4" 
+						style="font-family:comic sans ms; text-align:center; color:white; background-color:gray;
+					font-size:9pt">
+						JavaScript Calculator
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><input id="Answer" type="text" style="width:100px; text-align:right"></td>
+					<td><input type="button" style="width:30px" value="=" onclick="obj.EnterEqual()"></td>
+				</tr>
+				<tr>
+					<td><input type="button" style="width:30px" value="1" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="2" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="3" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="+" onclick="obj.EnterOperator(this.value)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" style="width:30px" value="4" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="5" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="6" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="-" onclick="obj.EnterOperator(this.value)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" style="width:30px" value="7" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="8" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="9" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="*" onclick="obj.EnterOperator(this.value)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" style="width:30px" value="C" onclick="obj.EnterClear()"></td>
+					<td><input type="button" style="width:30px" value="0" onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="." onclick="obj.EnterNumber(this.value)"></td>
+					<td><input type="button" style="width:30px" value="/" onclick="obj.EnterOperator(this.value)"></td>
+				</tr>
+			</table>
+			<input type="button" name="signout" value="singout">
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

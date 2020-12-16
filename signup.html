@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="loginbox">
+        <img src="images/avatar.png" class="avatar">
+        
+        <h1>REGISTER</h1>
+        <h3 id="Error"></h3>
+        <h3></h3>
+        
+        <form action="signin.html" method="POST" autocomplete="off">
+            <p><label for="user">Username</label></p>
+            <input type="text" name="user" id="user" placeholder="Enter Username" required>
+            <p><label for="email">Email</label></p>
+            <input type="email" name="email" id="email" placeholder="Enter Username" required>
+            <p><label for="pass">Password</label></p>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password" required>
+            <p><label for="confirmed_pass">Confirm Password</label></p>
+            <input type="password" name="confirmed_pass" id="confirmed_pass" placeholder="Enter Password" required>
+            <input type="button" name="login" value="login">
+            <input type="submit" value="singup" name="signup">
+            <!-- <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a> -->
+        </form>
+            
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+</html>
